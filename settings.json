@@ -1,0 +1,196 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.useTabs": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "expand",
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    "*.kit": "html"
+  },
+  "editor.guides.bracketPairs": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "telemetry.telemetryLevel": "off",
+  "editor.tabSize": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.showAbbreviationSuggestions": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.insertSpaces": false,
+  "css.lint.unknownAtRules": "ignore",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "prettier.endOfLine": "lf",
+  "files.eol": "\n",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 25,
+  "html.format.indentHandlebars": true,
+  "window.menuBarVisibility": "toggle",
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "Fira Code",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "editor.minimap.autohide": true,
+  "cSpell.userWords": ["supabase"],
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["^"]
+    }
+    // { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    // { "before": [">"], "commands": ["editor.action.indentLines"] }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-d>": true,
+    "<C-c>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<C-z>": false,
+    "<C-w>": false,
+    "<C-]>": false,
+    "<C-[>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    // NAVIGATION
+    // switch b/w buffers
+    // { "before": ["<S-h>"], "commands": [":bprevious"] },
+    // { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    // { "before": ["leader", "v"], "commands": [":vsplit"] },
+    // { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["<Leader>", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+
+    // NICE TO HAVE
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":wq"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["^"]
+    },
+    // { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    // { "before": [">"], "commands": ["editor.action.indentLines"] },
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["]", "<leader>"],
+      "commands": ["editor.action.insertLineAfter"]
+    },
+    {
+      "before": ["[", "<leader>"],
+      "commands": ["editor.action.insertLineBefore"]
+    }
+  ],
+  "git.openRepositoryInParentFolders": "always",
+  "window.restoreFullscreen": true,
+  "editor.linkedEditing": true,
+  "vim.smartRelativeLine": false,
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 2,
+  "editor.suggest.insertMode": "replace",
+  "keyboard.dispatch": "keyCode",
+  "workbench.colorTheme": "Tokyo Night Storm"
+}
