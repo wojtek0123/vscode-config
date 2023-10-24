@@ -38,7 +38,7 @@
   "prettier.endOfLine": "lf",
   "files.eol": "\n",
   "editor.fontSize": 16,
-  "editor.lineHeight": 25,
+  "editor.lineHeight": 26,
   "html.format.indentHandlebars": true,
   "window.menuBarVisibility": "toggle",
   "editor.accessibilitySupport": "off",
@@ -49,8 +49,8 @@
   "cSpell.userWords": ["supabase"],
   "vim.easymotion": true,
   "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
   "vim.visualModeKeyBindings": [
     {
@@ -77,11 +77,11 @@
     // { "before": [">"], "commands": ["editor.action.indentLines"] }
   ],
   "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false,
+    "<C-a>": true,
+    "<C-f>": true,
     "<C-d>": true,
-    "<C-c>": false,
-    "<C-x>": false,
+    "<C-c>": true,
+    "<C-x>": true,
     "<C-v>": false,
     "<C-z>": false,
     "<C-w>": false,
@@ -90,17 +90,9 @@
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<C-n>"],
+      "before": ["leader", "n"],
       "commands": [":nohl"]
     },
-    // NAVIGATION
-    // switch b/w buffers
-    // { "before": ["<S-h>"], "commands": [":bprevious"] },
-    // { "before": ["<S-l>"], "commands": [":bnext"] },
-
-    // splits
-    // { "before": ["leader", "v"], "commands": [":vsplit"] },
-    // { "before": ["leader", "s"], "commands": [":split"] },
 
     // panes
     {
@@ -124,7 +116,6 @@
       "commands": ["editor.action.quickFix"]
     },
 
-    // NICE TO HAVE
     {
       "before": ["leader", "w"],
       "commands": ["workbench.action.files.save"]
@@ -148,6 +139,10 @@
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
     }
   ],
   "vim.leader": "<space>",
@@ -183,14 +178,29 @@
       "commands": ["editor.action.insertLineBefore"]
     }
   ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
   "git.openRepositoryInParentFolders": "always",
-  "window.restoreFullscreen": true,
   "editor.linkedEditing": true,
   "vim.smartRelativeLine": false,
+  "vim.replaceWithRegister": true,
+  "vim.foldfix": true,
   "editor.fontLigatures": true,
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "editor.suggest.insertMode": "replace",
   "keyboard.dispatch": "keyCode",
+  // "workbench.activityBar.visible": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "workbench.colorTheme": "Tokyo Night Storm"
 }
